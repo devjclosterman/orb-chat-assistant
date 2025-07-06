@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DesertForged AI Orb Demo</title>
+
+  <!-- main styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO / ORB SCENE -->
+  <section class="hero">
+    <div class="orb-scene">
+      <div class="ai-orb" id="aiOrb">
+
+        <!-- Front face (logo) -->
+        <div class="orb-face orb-front">
+          <img src="/ChatGPT Image Jun 8, 2025, 12_00_54 AM.png" alt="DesertForged AI" />
+        </div>
+
+        <!-- Back face (UI slice) -->
+        <div class="orb-face orb-back">
+          <button class="ui-slice" id="chatToggle" aria-label="Open chat">
+            <!-- simple chat icon -->
+            <svg viewBox="0 0 24 24" width="24" height="24">
+              <path d="M4 4h16v12H5.17L4 18.17V4z" fill="currentColor"/>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Off-canvas chat panel -->
+  <aside class="chat-panel" id="chatPanel">
+    <header>
+      <h2>Desert AI Assistant</h2>
+      <button id="closeChat" aria-label="Close chat">×</button>
+    </header>
+
+    <div class="chat-body" id="chatBody">
+      <!-- Mount your chatbot or embed widget here -->
+      <p style="opacity:.6">⚡ Embed your chat widget or custom UI here…</p>
+    </div>
+  </aside>
+
+  <!-- behaviour -->
+  <script src="main.js"></script>
+</body>
+</html>
